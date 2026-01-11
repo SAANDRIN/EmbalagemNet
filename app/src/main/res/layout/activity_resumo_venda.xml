@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F9F9F9"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="40dp">
+
+    <!-- CONTEÚDO -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40sp"
+        android:padding="16dp">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <!-- TOPO -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtNumeroVenda"
+                    android:text="Venda #0001"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#FF7A00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <!-- CARD PRINCIPAL -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="6dp"
+                app:strokeColor="#FF7A00"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:padding="16dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- CLIENTE -->
+                    <TextView
+                        android:id="@+id/txtCliente"
+                        android:hint="Cliente: João Silva"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#222222"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/txtCidade"
+                        android:hint="Cidade: São Paulo - SP"
+                        android:textColor="#777777"
+                        android:textSize="20sp"
+                        android:layout_marginTop="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <View
+                        android:layout_marginVertical="12dp"
+                        android:background="#EEEEEE"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                    <!-- ITENS -->
+                    <TextView
+                        android:text="Itens"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="#FF7A00"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/txtItens"
+                        android:hint="• Mochila x2\n• Copo x1"
+                        android:layout_marginTop="8dp"
+                        android:textSize="16sp"
+                        android:textColor="#444444"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <View
+                        android:layout_marginVertical="12dp"
+                        android:background="#EEEEEE"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                    <!-- VALORES -->
+                    <TextView
+                        android:id="@+id/txtFormaPagamento"
+                        android:hint="Pagamento: PIX"
+                        android:textSize="16sp"
+                        android:textColor="#444444"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/txtSubtotal"
+                        android:textSize="16sp"
+                        android:hint="Subtotal: R$ 1000,00"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/txtFrete"
+                        android:textSize="16sp"
+                        android:hint="Frete: R$ 50,00"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/txtDesconto"
+                        android:textSize="16sp"
+                        android:hint="Desconto: 10%"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/txtFreteGratis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Frete grátis"
+                        android:textColor="#4CAF50"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        android:layout_marginTop="4dp"/>
+
+                    <TextView
+                        android:id="@+id/txtValorTotal"
+                        android:hint="Total: R$ 1.250,00"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:textColor="#FF7A00"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- BOTÕES -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnSalvar"
+                    android:text="Salvar"
+                    android:backgroundTint="#FF7A00"
+                    android:textColor="#FFFFFF"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:id="@+id/btnEnviar"
+                    android:text="Enviar"
+                    android:layout_marginHorizontal="8dp"
+                    android:backgroundTint="#25D366"
+                    android:textColor="#FFFFFF"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:id="@+id/btnExportar"
+                    android:text="Exportar"
+                    android:backgroundTint="#444444"
+                    android:textColor="#FFFFFF"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabVoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_voltar"
+        android:backgroundTint="#FF7A00"
+        android:layout_gravity="bottom|start"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="72dp"
+        app:elevation="8dp"/>
+
+
+    <!-- FAB -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabHistorico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Histórico"
+        android:src="@drawable/ic_historico"
+        android:backgroundTint="#FF7A00"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="72dp"
+        app:elevation="8dp"/>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

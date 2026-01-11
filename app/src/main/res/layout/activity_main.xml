@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.core.widget.NestedScrollView
+
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:fillViewport="true"
+android:background="#F7F7F7">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <!-- HEADER -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingBottom="24dp">
+
+
+        <TextView
+            android:id="@+id/txtLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:layout_marginTop="9dp"
+            android:text="EmbalagemNet "
+            android:drawableEnd="@drawable/logo_icon"
+            android:textColor="@color/laranja"
+            android:textColorHint="@color/laranja"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+
+
+
+    </LinearLayout>
+
+    <!-- GRID DE ITENS -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:useDefaultMargins="true">
+
+        <!-- ITEM CARD (reutilize este bloco) -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/mochila_45l" />
+
+                <TextView
+                    android:text="Mochila 45L"
+                    android:textStyle="bold"
+                    android:paddingTop="8dp"
+                    android:textColor="#212121"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <!-- STEPPER -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:background="#EEEEEE"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:padding="4dp">
+
+                    <Button
+                        android:id="@+id/btnMinusMochila"
+                        android:text="-"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#BDBDBD"/>
+
+                    <TextView
+                        android:id="@+id/txtQtdMochila"
+                        android:text="0"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:layout_width="48dp"
+                        android:layout_height="match_parent"/>
+
+                    <Button
+                        android:id="@+id/btnPlusMochila"
+                        android:text="+"
+                        android:textColor="#FFFFFF"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#F57C00"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/bolsa_termica" />
+
+                <TextView
+                    android:text="Bolsa Térmica"
+                    android:textStyle="bold"
+                    android:paddingTop="8dp"
+                    android:textColor="#212121"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <!-- STEPPER -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:background="#EEEEEE"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:padding="4dp">
+
+                    <Button
+                        android:id="@+id/btnMinusBolsa"
+                        android:text="-"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#BDBDBD"/>
+
+                    <TextView
+                        android:id="@+id/txtQtdBolsa"
+                        android:text="0"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:layout_width="48dp"
+                        android:layout_height="match_parent"/>
+
+                    <Button
+                        android:id="@+id/btnPlusBolsa"
+                        android:text="+"
+                        android:textColor="#FFFFFF"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#F57C00"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/pochete" />
+
+                <TextView
+                    android:text="Pochete"
+                    android:textStyle="bold"
+                    android:paddingTop="8dp"
+                    android:textColor="#212121"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <!-- STEPPER -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:background="#EEEEEE"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:padding="4dp">
+
+                    <Button
+                        android:id="@+id/btnMinusPochete"
+                        android:text="-"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#BDBDBD"/>
+
+                    <TextView
+                        android:id="@+id/txtQtdPochete"
+                        android:text="0"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:layout_width="48dp"
+                        android:layout_height="match_parent"/>
+
+                    <Button
+                        android:id="@+id/btnPlusPochete"
+                        android:text="+"
+                        android:textColor="#FFFFFF"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#F57C00"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/copo" />
+
+                <TextView
+                    android:text="Copo "
+                    android:textStyle="bold"
+                    android:paddingTop="8dp"
+                    android:textColor="#212121"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <!-- STEPPER -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:background="#EEEEEE"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:padding="4dp">
+
+                    <Button
+                        android:id="@+id/btnMinusCopo"
+                        android:text="-"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#BDBDBD"/>
+
+                    <TextView
+                        android:id="@+id/txtQtdCopo"
+                        android:text="0"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:layout_width="48dp"
+                        android:layout_height="match_parent"/>
+
+                    <Button
+                        android:id="@+id/btnPlusCopo"
+                        android:text="+"
+                        android:textColor="#FFFFFF"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#F57C00"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/lacres_bobina" />
+
+                <TextView
+                    android:text="Lacres"
+                    android:textStyle="bold"
+                    android:paddingTop="8dp"
+                    android:textColor="#212121"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <!-- STEPPER -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:background="#EEEEEE"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:padding="4dp">
+
+                    <Button
+                        android:id="@+id/btnMinusLacres"
+                        android:text="-"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#BDBDBD"/>
+
+                    <TextView
+                        android:id="@+id/txtQtdLacres"
+                        android:text="0"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:layout_width="48dp"
+                        android:layout_height="match_parent"/>
+
+                    <Button
+                        android:id="@+id/btnPlusLacres"
+                        android:text="+"
+                        android:textColor="#FFFFFF"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#F57C00"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/sache_giardanapo" />
+
+                <TextView
+                    android:text="Guardanapo Sachê"
+                    android:textStyle="bold"
+                    android:paddingTop="8dp"
+                    android:textColor="#212121"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <!-- STEPPER -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:background="#EEEEEE"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:padding="4dp">
+
+                    <Button
+                        android:id="@+id/btnMinusGuard"
+                        android:text="-"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#BDBDBD"/>
+
+                    <TextView
+                        android:id="@+id/txtQtdGuard"
+                        android:text="0"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:layout_width="48dp"
+                        android:layout_height="match_parent"/>
+
+                    <Button
+                        android:id="@+id/btnPlusGuard"
+                        android:text="+"
+                        android:textColor="#FFFFFF"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#F57C00"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/mochila_imp" />
+
+                <TextView
+                    android:text="Mochila 45L IMP"
+                    android:textStyle="bold"
+                    android:paddingTop="8dp"
+                    android:textColor="#212121"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <!-- STEPPER -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:background="#EEEEEE"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:padding="4dp">
+
+                    <Button
+                        android:id="@+id/btnMinusMI"
+                        android:text="-"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#BDBDBD"/>
+
+                    <TextView
+                        android:id="@+id/txtQtdMI"
+                        android:text="0"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:layout_width="48dp"
+                        android:layout_height="match_parent"/>
+
+                    <Button
+                        android:id="@+id/btnPlusMI"
+                        android:text="+"
+                        android:textColor="#FFFFFF"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#F57C00"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/bolachas" />
+
+                <TextView
+                    android:text="Bolacha de Chop"
+                    android:textStyle="bold"
+                    android:paddingTop="8dp"
+                    android:textColor="#212121"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <!-- STEPPER -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:background="#EEEEEE"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:padding="4dp">
+
+                    <Button
+                        android:id="@+id/btnMinusBolacha"
+                        android:text="-"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#BDBDBD"/>
+
+                    <TextView
+                        android:id="@+id/txtQtdBolacha"
+                        android:text="0"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:layout_width="48dp"
+                        android:layout_height="match_parent"/>
+
+                    <Button
+                        android:id="@+id/btnPlusBolacha"
+                        android:text="+"
+                        android:textColor="#FFFFFF"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#F57C00"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- DUPLIQUE O CARD PARA OS OUTROS ITENS -->
+        <!-- Bolsa térmica | Pochete | Copo -->
+
+    </GridLayout>
+
+    <!-- SUBTOTAL -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:text="Subtotal"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/txtSubtotal"
+                android:text="R$ 0,00"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#F57C00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- FRETE -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:text="Frete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/edtFrete"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Ex: R$ 35,00"
+                android:inputType="numberDecimal"
+                android:gravity="end"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- BOTÃO -->
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:text="CALCULAR ORÇAMENTO"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:backgroundTint="#F57C00"/>
+
+
+
+
+
+</LinearLayout>
+
+
+
+</androidx.core.widget.NestedScrollView>
+
+    <ImageButton
+        android:id="@+id/btnHistorico"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="top|end"
+        android:layout_margin="12dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Histórico"
+        android:padding="4dp"
+        android:src="@drawable/ic_historico"
+        android:tint="@color/laranja"/>
+
+
+</FrameLayout>

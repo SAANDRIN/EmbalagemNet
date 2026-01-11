@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9F9">
+
+    <!-- ESPAÇO FICTÍCIO DA TOOLBAR -->
+    <View
+        android:id="@+id/fakeToolbarSpace"
+        android:layout_width="match_parent"
+        android:layout_height="56dp" />
+
+    <!-- LISTA -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerHistorico"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:clipToPadding="false"
+        android:layout_marginTop="56dp"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
