@@ -24,4 +24,6 @@ _**Tela de Histórico**_
 
 _**- No vídeo abaixo é possivel visualizar o envio do resumo da venda em pdf para um contato do whatsapp, além de exportar o mesmo para fora do app (para o armazenamento do dispositivo)**_
 
-![Video Simulação](https://youtube.com/shorts/AE0tRydGfYc)
+### ▶️ Vídeo de Simulação
+[![Vídeo de Simulação](https://img.youtube.com/vi/AE0tRydGfYc/0.jpg)](https://youtube.com/shorts/AE0tRydGfYc)
+
