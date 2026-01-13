@@ -10,13 +10,12 @@ _**Imagens Demonstrativas**_
 ![Tela Principal - Parte 2 (Bottom)](https://github.com/SAANDRIN/ImagensConjunto/blob/main/EmbalagemNet%20-%20Tela%201%20-%202%20de%202.jpg)
 
 
-_**Tela de Formulário **_
+_**Tela de Formulário**_
 
 _**- Nessa tela é possível configurar/aplicar o frete grátis, desconto e selecionar a forma de pagamento, além de que é possível (e necessário visto que é obrigatório) preencher o campo do 'cliente' e 'Cidade/UF'**_
 
 
 ![Tela Formulário (Vazia)](https://github.com/SAANDRIN/ImagensConjunto/blob/main/EmbalagemNet%20-%20tela%202%20vazia.jpg)
-
 ![Tela Formulário (Preenchida)](https://github.com/SAANDRIN/ImagensConjunto/blob/main/EmbalagemNet%20-%20tela%202%20preenchida.jpg)
 
 _**Tela de Histórico**_
